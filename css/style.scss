@@ -518,6 +518,7 @@ input[type='number'] {
     .content_area {
       width: calc(100% - 240px);
       max-width: 1440px;
+      min-width: 1440px;
       margin: 40px auto 0 auto;
       .sub_area_cont{
         &.introduce{
