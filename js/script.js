@@ -69,7 +69,7 @@ var swiper = new Swiper('.main_slide .swiper-container', {
         prevEl: '.swiper-button-prev',
     },
     autoplay:{
-        delay: 3000,
+        delay: 5000,
         disableOnInteraction: false, // false-스와이프 후 자동 재생
     },
     
@@ -94,9 +94,9 @@ $(function(){
 	$('.type').typed({
 		//strings:["오늘은 월요일","한주의 시작이다","기분좋게 공부하고<br>주말까지 힘내자"],   // 입력될 내용 삽입하기
 		
-		strings:["Crafting Interfaces, Building Experiences"],   // 여러줄 삽입하기
-		typeSpeed: 200, // type 속도
-		backDelay: 5000,
+		strings:["Web Showcase"],   // 여러줄 삽입하기
+		typeSpeed: 100, // type 속도
+		backDelay: 10000,
 		loop: true //false는 한번만 실행
 	});
 });

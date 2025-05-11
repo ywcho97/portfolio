@@ -248,7 +248,7 @@ input[type=number] {
   box-sizing: border-box;
   cursor: pointer;
   border-radius: 10px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   transition: all 0.3s;
 }
@@ -547,11 +547,11 @@ input[type=number] {
   border-radius: 10px;
 }
 .sub_wrap .sub_content .content_area .sub_area_cont.introduce .profileImg .profileBox h2 {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 .sub_wrap .sub_content .content_area .sub_area_cont.introduce .profileImg .profileBox p {
-  font-size: 16px;
+  font-size: 18px;
   word-break: keep-all;
   line-height: 24px;
   color: #666;
@@ -618,7 +618,7 @@ input[type=number] {
           padding: 15px 10px;
           align-items: center;
           transition: all 1s;
-          font-size: 16px;
+          font-size: 18px;
           color: #13181e;
 
           i {
@@ -721,7 +721,7 @@ input[type=number] {
   padding: 5px;
   border: 1px dashed #fff;
   color: #fff;
-  font-size: 1.4rem;
+  font-size: 16px;
   box-sizing: border-box;
   border-radius: 20px;
   margin: 5px 10px;
@@ -739,6 +739,14 @@ input[type=number] {
 .box .box_wrap .box_cont dl {
   margin: 0;
 }
+.box .box_wrap .box_cont dl dd {
+  color: #fff;
+  line-height: 32px;
+}
+.box .box_wrap .box_cont dl dd span {
+  color: #fff;
+  margin-left: 24px;
+}
 .box h2 {
   font-size: 2rem;
   color: #fff;
@@ -746,8 +754,8 @@ input[type=number] {
 .box p {
   word-break: keep-all;
   margin: 10px 0 0 0;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 32px;
   color: #fff;
 }
 .box dl {
@@ -756,8 +764,8 @@ input[type=number] {
 .box dl dd {
   display: block;
   margin: 0 0 5px 0;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 32px;
   color: #fff;
 }
 .box dl dd::before {
@@ -780,7 +788,7 @@ input[type=number] {
 .top_tbl thead tr th {
   background-color: #414b69;
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   border-bottom: 1px solid #ddd;
   border-right: 1px solid #ddd;
   padding: 10px 0;
@@ -844,7 +852,7 @@ input[type=number] {
 .top_tbl tbody tr td i.mdi {
   position: absolute;
   right: 5px;
-  font-size: 16px;
+  font-size: 18px;
   color: #bbb;
   cursor: pointer;
   top: 0;
@@ -892,7 +900,7 @@ input[type=number] {
 .content_wrap .section .main_wrap .main_img .cont_tit h2 {
   font-size: 18rem;
   color: #fff;
-  font-family: "Rangile", sans-serif;
+  font-family: "PuradakGentleGothicR", sans-serif;
   font-weight: 600;
   font-style: normal !important;
 }
@@ -933,7 +941,7 @@ input[type=number] {
 .content_wrap .section .content .cont_txt button {
   background-color: #fff;
   padding: 10px 18px;
-  font-size: 16px;
+  font-size: 18px;
   border-radius: 10px;
   color: #222;
   font-weight: 600;
@@ -979,14 +987,14 @@ input[type=number] {
   margin-top: 70px;
 }
 #skill .charts .chart .innerCont .num {
-  font-size: 1.5em;
+  font-size: 15px;
   font-weight: bold;
   color: #333333;
   position: relative;
   top: -10px;
 }
 #skill .charts .chart .innerCont .percent {
-  font-size: 0.9em;
+  font-size: 9px;
   color: #000;
   font-weight: bold;
   position: relative;
@@ -1071,12 +1079,14 @@ input[type=number] {
 }
 .main_slide .swiper-slide .slide_ment .slide_ex dl dt {
   color: #fff;
-  font-size: 1.6rem;
+  font-size: 16px;
   font-weight: 600;
 }
 .main_slide .swiper-slide .slide_ment .slide_ex dl dd {
   color: #fff;
-  font-size: 1.4rem;
+  font-size: 16px;
+  line-height: 24px;
+  word-break: keep-all;
 }
 .main_slide .swiper-slide .slide_ment .slide_ex dl dd::before {
   content: "";
@@ -1141,7 +1151,7 @@ input[type=number] {
 }
 .footer p {
   color: #fff;
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
   padding: 50px 0;
 }/*# sourceMappingURL=style.css.map */
