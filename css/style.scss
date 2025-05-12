@@ -598,7 +598,7 @@ input[type='number'] {
   }
 
   h2 {
-    font-size: 2.4rem;
+    font-size: 24px;
     margin-left: 28px;
     color: #fff;
   }
@@ -774,7 +774,7 @@ input[type='number'] {
     }
   }
   h2{
-    font-size: 2rem;
+    font-size: 20px;
     color: #fff;
   }
   p{
@@ -929,7 +929,7 @@ input[type='number'] {
                 mix-blend-mode: difference;
 
                 h2{
-                  font-size: 18rem;
+                  font-size: 180px;
                   color: #fff;
                   font-family: 'PuradakGentleGothicR', sans-serif;
                   font-weight: 600;
@@ -948,7 +948,7 @@ input[type='number'] {
               transform: translate(0, 0);
               text-align: center;
               h3{
-                font-size: 4rem;
+                font-size: 40px;
                 color: #333;
                 font-family: 'PuradakGentleGothicR';
                 font-weight: 600;
@@ -960,7 +960,7 @@ input[type='number'] {
                 }
               }
               p{
-                font-size: 3rem;
+                font-size: 30px;
                 color: #666;
                 display: inline-block;
                 font-family: 'PuradakGentleGothicR';
@@ -1063,7 +1063,7 @@ input[type='number'] {
       .slide_tit{
           h2{
             color: #fff;
-            font-size: 2rem;
+            font-size: 20px;
           }
       }
       .slide_ex{
@@ -1162,4 +1162,121 @@ input[type='number'] {
     text-align: center;
     padding: 50px 0;
   }
+}
+
+/* 반응형 */
+@media (min-width: 0px) and (max-width: 1280px) {
+  .content_wrap{
+    width: 100%; height: auto;
+    .section{
+      .main_wrap{
+        .main_img{
+          height: 500px;
+          img{
+            height: 500px;
+          }
+          .cont_tit{
+            top: 15%;
+            h2{
+              font-size: 90px;
+            }
+          }
+        }
+      }
+      .content{
+        width: 100%;
+        .cont_txt{
+          position: absolute;
+          right: 40px;
+          bottom: 50px;
+          h3{
+            font-size: 30px;
+          }
+          p{
+            font-size: 20px;
+            color: #666;
+            display: inline-block;
+            font-family: 'PuradakGentleGothicR';
+            margin-top: -25px;
+          }
+        }
+      }
+    }
+  }
+  .sub_wrap {
+    .sub_content{
+      // min-height: 100vh;
+      padding-top: 20px;
+      &:last-child{
+        padding-bottom: 20px;
+      }
+      .content_area {
+        width: calc(100% - 80px);
+        .sub_area_cont{
+          &.introduce{
+            flex-direction: column;
+            align-items: center;
+            .profileImg{
+              margin-right: 0;
+              margin-bottom: 20px;
+              width: 350px;
+              .profileBox{
+                padding: 10px;
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+                h2{
+                  font-size: 20px;
+                  margin-bottom: 10px;
+                }
+                p{
+                  font-size: 18px;
+                  word-break: keep-all;
+                  line-height: 24px;
+                  color: #666;
+                }
+              }
+              img{
+                width: 350px;
+                border-radius: 10px;
+                border: 1px solid #ddd;
+                // filter: grayscale(1);
+              }
+            }
+          }
+        }
+      }
+      &:first-child{padding-top: 0;}
+    }
+  }
+}
+@media (min-width: 0px) and (max-width: 800px) {
+  .content_wrap{
+    width: 100%; height: auto;
+    .section{
+      .main_wrap{
+        .main_img{
+          height: 400px;
+          background: url(../img/mainBg.png) 0 0 no-repeat;
+          background-size: cover;
+          .cont_tit{
+            top: 15%;
+            h2{
+              font-size: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1280px) {
+  
+}
+@media (min-width: 1281px) and (max-width: 1920px) {
+	
+}
+@media (min-width: 1921px){
+	
 }
