@@ -473,6 +473,49 @@ input[type='number'] {
   box-sizing: border-box;
 }
  */
+body{
+  &.no-scroll{
+    overflow: hidden;
+  }
+}
+.intro-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease-out;
+  padding: 100px 20px;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #fff1dd;
+  position: fixed;
+  z-index: 10;
+  &.show{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  &.hide{
+    opacity: 0;
+    transform: translateY(-50px);
+    padding: 0;
+    height: 0;
+    transition: all 1s ease-in;
+  }
+  img{
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.content{
+  opacity: 0;
+  transition: opacity 0.8s ease-in;
+  &.visible{
+    opacity: 1;
+  }
+}
 .menu {
   
   .content_quickmenu {
@@ -709,7 +752,6 @@ input[type='number'] {
 }
 
 /* 박스 */
-
 .box {
   height: auto;
   padding: 20px;
@@ -939,7 +981,7 @@ input[type='number'] {
             }
         }
         .section_wrap{width: 80%; margin: 0 auto;}
-        .content{
+        .main_text{
             width: 80%; margin: 0 auto;
             .cont_txt{
               position: absolute;
@@ -1164,6 +1206,7 @@ input[type='number'] {
   }
 }
 
+
 /* 반응형 */
 @media (min-width: 0px) and (max-width: 1280px) {
   .content_wrap{
@@ -1183,7 +1226,7 @@ input[type='number'] {
           }
         }
       }
-      .content{
+      .main_text{
         width: 100%;
         .cont_txt{
           position: absolute;
@@ -1211,7 +1254,7 @@ input[type='number'] {
         padding-bottom: 20px;
       }
       .content_area {
-        width: calc(100% - 80px);
+        width: calc(100% - 40px);
         .sub_area_cont{
           &.introduce{
             flex-direction: column;
@@ -1249,10 +1292,64 @@ input[type='number'] {
       &:first-child{padding-top: 0;}
     }
   }
+
+  
+  /* 메인 슬라이드 */
+
+  .main_slide {
+    height: auto;
+    .swiper-slide{
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      .slide_img{
+        img {
+          width: 100%;
+          height: 400px;
+          border: 1px solid #ddd;
+          vertical-align: middle;
+          object-fit: cover;
+          object-position: top left;
+        }
+      }
+      
+      .slide_ment {
+        max-width: none;
+        height: auto;
+        padding: 0;
+        margin: 20px 0 0 0;
+        .slide_tit{
+            h2{
+              color: #fff;
+              font-size: 20px;
+            }
+        }
+      }
+    }
+    
+    .slide_control{
+      position: relative;
+      margin-top: 10px;
+      .swiper-button-next {
+        display: none;
+      }
+      .swiper-button-prev {
+        display: none;
+      }
+    }
+  }
 }
 @media (min-width: 0px) and (max-width: 800px) {
+  .intro-section{
+    img{
+      width: 90%;
+    }
+  }
   .content_wrap{
     width: 100%; height: auto;
+    .menu{
+      display: none;
+    }
     .section{
       .main_wrap{
         .main_img{
@@ -1268,7 +1365,15 @@ input[type='number'] {
         }
       }
     }
+    .box {
+      .box_wrap{
+        .box_cont{
+          flex-direction: column;
+        }
+      }
+    }
   }
+
 }
 
 @media (min-width: 801px) and (max-width: 1280px) {

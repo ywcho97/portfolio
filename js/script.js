@@ -100,3 +100,41 @@ $(function(){
 		loop: true //false는 한번만 실행
 	});
 });
+
+
+window.addEventListener("load", () => {
+    const intro = document.querySelector(".intro-section");
+    const main = document.querySelector(".content");
+    const body = document.querySelector('body');
+    // 인트로 등장
+    intro.classList.add("show");
+
+    // 1초 뒤 사라짐 처리
+    setTimeout(() => {
+        intro.classList.remove("show");
+        intro.classList.add("hide");
+        body.classList.remove("no-scroll");
+    }, 1000);
+
+    // 인트로가 완전히 사라진 후 메인 콘텐츠 표시
+    setTimeout(() => {
+        main.classList.add("visible");
+    }, 2000); // 인트로 transition: 1s 이므로 1초 + 여유 1초
+
+        const introImg = document.getElementById("introImg");
+
+    // 사용할 이미지 목록 (파일명만 바꾸면 쉽게 추가 가능)
+    const images = [
+        "./img/intro01.png",
+        "./img/intro02.png",
+        "./img/intro03.png",
+        "./img/intro04.png"
+    ];
+
+    // 랜덤으로 하나 선택
+    const randomIndex = Math.floor(Math.random() * images.length);
+    const selectedImage = images[randomIndex];
+
+    // 이미지 설정
+    introImg.src = selectedImage;
+});
