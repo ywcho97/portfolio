@@ -96,7 +96,7 @@ $(function(){
 		
 		strings:["Web Showcase"],   // 여러줄 삽입하기
 		typeSpeed: 100, // type 속도
-		backDelay: 10000,
+		backDelay: 5000,
 		loop: true //false는 한번만 실행
 	});
 });
