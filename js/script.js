@@ -156,3 +156,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
     fadeUps.forEach(el => observer.observe(el));
 });
+
+
+window.onload = function() {
+    const listBoxes = document.querySelectorAll('.listBox'); 
+    
+    listBoxes.forEach(box => {
+        // 320 ~ 480 사이의 랜덤 정수 계산
+        const randomHeight = Math.floor(Math.random() * (480 - 320 + 1)) + 320; 
+        // 스타일 직접 주입
+        box.style.height = randomHeight + 'px'; 
+    }); 
+};
+
+
+function togglePopup(popupId) {
+    const popup = document.getElementById(popupId);
+    if (!popup) return; // 요소 없으면 중단
+
+    if (popup.style.display === 'block') {
+        popup.classList.remove('show');
+        document.body.style.overflow = ''; // 스크롤 잠금 해제
+    } else {
+        popup.classList.add('show');
+        document.body.style.overflow = 'hidden'; // 스크롤 잠금
+    }
+}
+
+
+function closePopup(popupId) {
+    const popup = document.getElementById(popupId);
+    if (!popup) return;
+    popup.classList.remove('show');
+    document.body.style.overflow = ''; // 스크롤 잠금 해제
+}
