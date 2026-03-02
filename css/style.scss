@@ -1078,7 +1078,7 @@ overflow-x: scroll;
                 color: #333;
                 font-family: 'PuradakGentleGothicR';
                 font-weight: 600;
-                text-align: justify;
+                text-align: right;
                 &::after{
                 content: '';
                 width: 100%;
@@ -1502,4 +1502,5 @@ width: 100%;
 }
 @media (min-width: 1921px){
     
+
 }
