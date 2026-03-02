@@ -1118,7 +1118,7 @@ transition: all 0.5s;
   color: #333;
   font-family: "PuradakGentleGothicR";
   font-weight: 600;
-  text-align: justify;
+  text-align: right;
 }
 .content_wrap .section .main_text .cont_txt h3::after {
   content: "";
