@@ -563,11 +563,18 @@ body.no-scroll {
 .sub_wrap {
   width: 100%;
   box-sizing: border-box;
-  background-color: #7f7f7f;
   position: relative;
 }
 .sub_wrap .sub_content {
   padding-top: 50px;
+  background-color: #7f7f7f;
+  position: relative;
+  z-index: 2;
+}
+.sub_wrap .sub_content#content1 {
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 .sub_wrap .sub_content:last-child {
   padding-bottom: 50px;
@@ -622,6 +629,9 @@ body.no-scroll {
     -moz-column-count: 1;
          column-count: 1;
   }
+}
+.sub_wrap .sub_content .content_area .sub_area .list {
+  margin-bottom: 10px;
 }
 .sub_wrap .sub_content .content_area .sub_area .listBox {
   display: inline-block;
@@ -1118,7 +1128,7 @@ transition: all 0.5s;
   color: #333;
   font-family: "PuradakGentleGothicR";
   font-weight: 600;
-  text-align: right;
+  text-align: justify;
 }
 .content_wrap .section .main_text .cont_txt h3::after {
   content: "";
